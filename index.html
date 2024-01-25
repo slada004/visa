@@ -102,7 +102,7 @@
     !function () { "use strict"; function e(e) { for (var t = 1; t < arguments.length; t++) { var n = arguments[t]; for (var o in n) e[o] = n[o] } return e } var t = function t(n, o) { function r(t, r, i) { if ("undefined" != typeof document) { "number" == typeof (i = e({}, o, i)).expires && (i.expires = new Date(Date.now() + 864e5 * i.expires)), i.expires && (i.expires = i.expires.toUTCString()), t = encodeURIComponent(t).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape); var c = ""; for (var u in i) i[u] && (c += "; " + u, !0 !== i[u] && (c += "=" + i[u].split(";")[0])); return document.cookie = t + "=" + n.write(r, t) + c } } return Object.create({ set: r, get: function (e) { if ("undefined" != typeof document && (!arguments.length || e)) { for (var t = document.cookie ? document.cookie.split("; ") : [], o = {}, r = 0; r < t.length; r++) { var i = t[r].split("="), c = i.slice(1).join("="); try { var u = decodeURIComponent(i[0]); if (o[u] = n.read(c, u), e === u) break } catch (e) { } } return e ? o[e] : o } }, remove: function (t, n) { r(t, "", e({}, n, { expires: -1 })) }, withAttributes: function (n) { return t(this.converter, e({}, this.attributes, n)) }, withConverter: function (n) { return t(e({}, this.converter, n), this.attributes) } }, { attributes: { value: Object.freeze(o) }, converter: { value: Object.freeze(n) } }) }({ read: function (e) { return '"' === e[0] && (e = e.slice(1, -1)), e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent) }, write: function (e) { return encodeURIComponent(e).replace(/%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g, decodeURIComponent) } }, { path: "/" }), n = t; function o(e) { return o = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, o(e) } var r = function (e, t) { if (null != t && "" !== t) { "object" === o(t) && (t = JSON.stringify(t)); var r = document.head.querySelector('meta[name="cookie_domain"]').content; n.set(e, t, { domain: r, sameSite: "lax" }) } else console.error("Attempted to set null cookie value for ", e) }, i = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]; null === function (e) { var t = n.get(e); if (null == t || "" === t) return null; if ("{" === t.substring(0, 1) || "[" === t.substring(0, 1)) try { return JSON.parse(t) } catch (e) { } return t }("cohort") && r("cohort", i[Math.floor(Math.random() * i.length)]) }();
   </script>
 
-  <script type="text/javascript" async="" src="js/10007419-10006767.js"></script>
+  // <script type="text/javascript" async="" src="js/10007419-10006767.js"></script>
 
   <script>
     window.gtm_vars = { "domain": "ivisa.govassist.com", "visitor_ip": null, "product_country": null, "nationality": null, "product_id": null, "product_name": null, "product_classification": null, "travel_doc_classification": null, "page_type": "home_page", "blog_page_id": null, "user_id": null };
@@ -2841,6 +2841,8 @@
 
     .border-blue-500 {
       --tw-border-opacity: 1;
+
+
       border-color: rgb(64 96 182/var(--tw-border-opacity))
     }
 
@@ -4022,7 +4024,7 @@
     <div id="currency-selector"
       data-vue-props="{&quot;locale&quot;:&quot;en&quot;,&quot;locale-subdomains&quot;:{&quot;en&quot;:{&quot;code&quot;:&quot;en&quot;,&quot;domain&quot;:&quot;www.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/www.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/www.ivisa.com\/&quot;,&quot;name&quot;:&quot;English&quot;,&quot;flag_country&quot;:&quot;US&quot;},&quot;es&quot;:{&quot;code&quot;:&quot;es&quot;,&quot;domain&quot;:&quot;es.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/es.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/es.ivisa.com\/&quot;,&quot;name&quot;:&quot;Espa\u00f1ol&quot;,&quot;flag_country&quot;:&quot;ES&quot;},&quot;fr&quot;:{&quot;code&quot;:&quot;fr&quot;,&quot;domain&quot;:&quot;fr.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/fr.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/fr.ivisa.com\/&quot;,&quot;name&quot;:&quot;Fran\u00e7ais&quot;,&quot;flag_country&quot;:&quot;FR&quot;},&quot;de&quot;:{&quot;code&quot;:&quot;de&quot;,&quot;domain&quot;:&quot;de.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/de.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/de.ivisa.com\/&quot;,&quot;name&quot;:&quot;Deutsch&quot;,&quot;flag_country&quot;:&quot;DE&quot;},&quot;ja&quot;:{&quot;code&quot;:&quot;ja&quot;,&quot;domain&quot;:&quot;ja.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/ja.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/ja.ivisa.com\/&quot;,&quot;name&quot;:&quot;\u65e5\u672c\u8a9e&quot;,&quot;flag_country&quot;:&quot;JP&quot;},&quot;it&quot;:{&quot;code&quot;:&quot;it&quot;,&quot;domain&quot;:&quot;it.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/it.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/it.ivisa.com\/&quot;,&quot;name&quot;:&quot;Italiano&quot;,&quot;flag_country&quot;:&quot;IT&quot;},&quot;ko&quot;:{&quot;code&quot;:&quot;ko&quot;,&quot;domain&quot;:&quot;ko.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/ko.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/ko.ivisa.com\/&quot;,&quot;name&quot;:&quot;\ud55c\uad6d\uc5b4&quot;,&quot;flag_country&quot;:&quot;KR&quot;},&quot;nl&quot;:{&quot;code&quot;:&quot;nl&quot;,&quot;domain&quot;:&quot;nl.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/nl.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/nl.ivisa.com\/&quot;,&quot;name&quot;:&quot;Nederlandse&quot;,&quot;flag_country&quot;:&quot;NL&quot;},&quot;pl&quot;:{&quot;code&quot;:&quot;pl&quot;,&quot;domain&quot;:&quot;pl.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/pl.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/pl.ivisa.com\/&quot;,&quot;name&quot;:&quot;Polski&quot;,&quot;flag_country&quot;:&quot;PL&quot;},&quot;pt&quot;:{&quot;code&quot;:&quot;pt&quot;,&quot;domain&quot;:&quot;pt.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/pt.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/pt.ivisa.com\/&quot;,&quot;name&quot;:&quot;Portugu\u00eas&quot;,&quot;flag_country&quot;:&quot;BR&quot;},&quot;ru&quot;:{&quot;code&quot;:&quot;ru&quot;,&quot;domain&quot;:&quot;ru.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/ru.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/ru.ivisa.com\/&quot;,&quot;name&quot;:&quot;P\u0443\u0441\u0441\u043a\u0438\u0439&quot;,&quot;flag_country&quot;:&quot;RU&quot;},&quot;sv&quot;:{&quot;code&quot;:&quot;sv&quot;,&quot;domain&quot;:&quot;sv.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/sv.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/sv.ivisa.com\/&quot;,&quot;name&quot;:&quot;Svenska&quot;,&quot;flag_country&quot;:&quot;SE&quot;},&quot;tr&quot;:{&quot;code&quot;:&quot;tr&quot;,&quot;domain&quot;:&quot;tr.ivisa.com&quot;,&quot;url_base&quot;:&quot;https:\/\/tr.ivisa.com&quot;,&quot;url&quot;:&quot;https:\/\/tr.ivisa.com\/&quot;,&quot;name&quot;:&quot;T\u00fcrk\u00e7e&quot;,&quot;flag_country&quot;:&quot;TR&quot;},&quot;zh&quot;:{&quot;code&quot;:&quot;zh&quot;,&quot;domain&quot;:&quot;ivisa.cn&quot;,&quot;url_base&quot;:&quot;https:\/\/ivisa.cn&quot;,&quot;url&quot;:&quot;https:\/\/ivisa.cn\/&quot;,&quot;name&quot;:&quot;\u4e2d\u6587\u00a0(Zh\u014dngw\u00e9n),\u00a0\u6c49\u8bed,\u00a0\u6f22\u8a9e&quot;,&quot;flag_country&quot;:&quot;CN&quot;}}}">
     </div>
-    <div style="display:none" data-critical="true"
+    <div data-critical="true"
       class="dropdown-filter z-50 shadow-lg dropdown-menu w-full relative
     text-dark m-2 h-9 pl-8 text-base rounded-md bg-white border-1 border-solid border-gray-300 flex items-center focus:outline-none focus:border-gray-300 focus:ring-0
     scrollable-options h-auto overflow-y-scroll border-primary border-2 foxtrot text-xl md:text-2xl lg:text-2xl text-center mb-4 p-10 font-bold text-3xl float-right mr-2 px-3 py-8 px-12 bg-tertiary w-12">
@@ -4033,7 +4035,7 @@
 
         <div class="flex items-center justify-between logo-section h-full w-full lg:w-auto bg-white p-1">
           <div class="flex items-center">
-            <a class="flex" href="https://ivisa.govassist.com" style="z-index: 0;">
+            <a class="flex" href="#" style="z-index: 0;">
               <span class="sr-only">iVisa.com</span>
               <div class="logo-container ml-0 sm:ml-4 mr-4 relative p-1">
                 <img class="logo-ivisa" src="fonts/ivisa-logo-bars.svg" alt="ivisa logo" width="93" height="65">
@@ -6280,19 +6282,6 @@
     loadjs(["https://d16zz69zs6o3lx.cloudfront.net/compiled/js/compiled-app.js?id=d4afefbd78c065356aa4fe9177f76ac0"], 'app');
   </script>
 
-  <div id="convert-intercom-chat">
-    <img class="cursor-pointer v2-cursor-pointer" id="intercom-chat-button" onclick="showChat()"
-      src="images/intercom-chat-icon.png" alt="Intercom Chat">
-    <span id="intercom-loading" class="hidden v2-hidden"><svg class=" h-12 w-12 v2-h-12 v2-w-12 text-primary mr-2 ml-2"
-        fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-        <path
-          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-        </path>
-      </svg>
-    </span>
-  </div>
-
   <script>
     window.intercomSettings = { "app_id": "tl2ihnzm" };
 
@@ -6429,7 +6418,38 @@
     checkForIncompatibleBrowsers(); // run on page load
   </script>
 
+  <script>
+    window.addEventListener('load', function() {
+    const button = document.getElementById('btn_visa_checker');
+  
+    button.onclick = () => {
+      const className = document.getElementsByClassName('v2-truncate');
+      
+      for (let i = 0; i < className.length; i++) {
+        const element = className[i].textContent;
+        
+        // Retrive the user country of origin
+        if(i === 1) {
+          localStorage.setItem('origin', element);
+        }
 
+        // Retrive the user destination country
+        if(i === 2) {
+          localStorage.setItem('dest', element);
+        }
+
+        if (i === null) {
+          alert('Something went wrong!!');
+        }
+        
+      }
+      // console.log(input);
+      document.location.href = '/visa.html';
+    };
+    console.log('The entire page, including stylesheets and images, has been loaded.');
+});
+
+  </script>
 
 </body>
 
